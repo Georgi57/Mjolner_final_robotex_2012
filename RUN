@@ -1,0 +1,19 @@
+#!/bin/sh
+
+
+v4l2-ctl -d /dev/video1 -c focus_auto=0
+v4l2-ctl -d /dev/video1 -c white_balance_temperature_auto=0
+v4l2-ctl -d /dev/video1 -c exposure_auto=1
+v4l2-ctl -d /dev/video1 -c exposure_absolute=166
+v4l2-ctl -d /dev/video1 -c exposure_auto_priority=0
+
+v4l2-ctl -d /dev/video1 -c brightness=128
+v4l2-ctl -d /dev/video1 -c contrast=32
+v4l2-ctl -d /dev/video1 -c saturation=32
+v4l2-ctl -d /dev/video1 -c sharpness=0
+v4l2-ctl -d /dev/video1 -c white_balance_temperature=4000           
+v4l2-ctl -d /dev/video1 -c focus_absolute=0
+v4l2-ctl -d /dev/video1 -c gain=64
+
+python /home/kondekas/Dropbox/Robotex12/Code/Kondekas/georgi/25.11/GUI.py
+

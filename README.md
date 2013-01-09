@@ -44,24 +44,11 @@ thresholdvalues.txt - last save values of the thresholds
 
 videoprocessing.py - videoprocessing module, which includes second robot videoprocessing also.
 
-
-
 ALGORITHM
 
-Essential files of the algorithm:
-
-main.py - AI
-
-robot_com.py - low level commands
-
-videoprocessing.py - videoprocessing of camera picture
-
-thresholdvalues.txt - last save values of the thresholds.
-
-
-
-
-
+Essential files of the algorithm: main.py, robot_com.py, videoprocessing.py, thresholdvalues.txt.
+Run the algorithm by running main.py. Algorithm consists of an infinite loop,
+which includes robot sensors checking, camera image processing and action decision.  
 
 DESCRIPTION OF ADDITIONAL FILES
 
